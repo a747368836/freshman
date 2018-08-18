@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/freshman_essential_main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:theme="@style/AppTheme"
+    tools:context=".EssentialToRegister.EssentialMainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/freshman_essential_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/freshman_top_gradient"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/freshman_essential_main_toolbar_back_imageview"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/freshman_essential_back" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_toolbar_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="入学必备"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/freshman_essential_main_toolbar_question_imageview"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/freshman_essential_main_toolbar_title_textview"
+                android:background="@mipmap/freshman_essential_question" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_toolbar_edit_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="编辑"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@id/freshman_essential_main_toolbar"
+        android:id="@+id/freshman_essential_main_recycler_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/freshman_essential_main_recycler_refreshlayout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+            <ScrollView
+                android:id="@+id/freshman_essential_main_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/freshman_essential_main_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_below="@id/freshman_essential_main_recycler"
+                        android:id="@+id/freshman_essential_main_add_cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+
+
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:id="@+id/freshman_essential_main_add_relativelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp">
+
+                            <EditText
+                                android:id="@+id/freshman_essential_main_addmore_edittext"
+                                android:layout_width="263dp"
+                                android:layout_height="36dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/freshman_essential_edit_bg"
+                                android:cursorVisible="false"
+                                android:hint="请输入待办事项（不超过14个字）"
+                                android:maxLength="14"
+                                android:textSize="14sp"
+
+                                />
+
+                            <Button
+                                android:id="@+id/freshman_essential_main_add_button"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@id/freshman_essential_main_addmore_edittext"
+                                android:background="@drawable/freshman_essential_button_radius"
+                                android:text="添加"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/freshman_essential_main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginRight="28dp"
+        android:src="@drawable/freshman_essential_fab_bg1"
+        app:backgroundTint="#778FFA"
+        app:fabSize="normal"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/freshman_essential_main_popup_cardview"
+        android:layout_width="316dp"
+        android:layout_height="301dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/freshman_essential_main_popup_cardview_close_imageview"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@mipmap/frashman_essential_popup_close" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_popup_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="功能介绍"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_popup_title1_textview"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="63dp"
+                android:text="1.文本框右侧【箭头】查看每一项任务 具体详情。 "
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_popup_title2_textview"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_essential_main_popup_title1_textview"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="14dp"
+                android:text="2.右上角的【编辑】，通过勾选进行选 择性删除（未标识可删除圆圈的则为报 道必需）。 "
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_popup_title3_textview"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_essential_main_popup_title2_textview"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="14dp"
+                android:text="3.点击左侧【空方框】勾选该项即为完 成，再次单击即可恢复。 "
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/freshman_essential_main_popup_title4_textview"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_essential_main_popup_title3_textview"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="14dp"
+                android:text="4.右下角【加号】图样可自定义添加新 待办。"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

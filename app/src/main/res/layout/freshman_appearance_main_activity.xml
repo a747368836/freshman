@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CQUPTAppearance.AppearanceActivity">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/freshman_appearance_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/freshman_top_gradient"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/freshman_appearance_main_toolbar_back_imageview"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/freshman_essential_back" />
+
+            <TextView
+                android:id="@+id/freshman_appearance_main_toolbar_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="type"
+                android:textColor="#FEFEFF"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/freshman_appearance_main_tablayout"
+        android:layout_below="@id/freshman_appearance_main_toolbar"
+        android:layout_width="match_parent"
+        android:background="#EEEEEE"
+        app:tl_divider_color="#1A000000"
+        app:tl_divider_padding="13dp"
+        app:tl_divider_width="1dp"
+        app:tl_indicator_color="#000000"
+        app:tl_indicator_height="1.5dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_padding="22dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="#000000"
+        app:tl_textUnselectColor="#66000000"
+        app:tl_underline_color="#1A000000"
+        app:tl_underline_height="1dp"
+        android:layout_height="48dp">
+
+    </com.flyco.tablayout.CommonTabLayout>
+
+    <com.mredrock.cyxbs.freshman.Tools.NotMoveViewPager
+        android:id="@+id/freshman_appearance_main_viewpager"
+        android:layout_below="@id/freshman_appearance_main_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.mredrock.cyxbs.freshman.Tools.NotMoveViewPager>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

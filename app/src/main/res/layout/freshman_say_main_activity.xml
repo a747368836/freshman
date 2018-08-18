@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".IWantToSay.IWantToSatActivity">
+
+    
+    <RelativeLayout
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/freshman_say_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/freshman_top_gradient"
+            android:fitsSystemWindows="true">
+                <TextView
+                    android:id="@+id/freshman_say_main_toolbar_title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="我想对你说"
+                    android:layout_gravity="center"
+                    android:textColor="#FEFEFF"
+                    android:textSize="18sp" />
+
+        </android.support.v7.widget.Toolbar>
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/freshman_back"
+            android:id="@+id/freshman_say_main_back_imageview"/>
+
+
+
+        <LinearLayout
+            android:layout_below="@id/freshman_say_main_toolbar"
+            android:clipChildren="false"
+            android:background="@mipmap/freshman_i_want_to_say_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/freshman_say_main_text_linearLayout"
+                android:clipChildren="false"
+                android:layout_marginTop="63dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<com.mredrock.cyxbs.freshman.Tools.TextWithUderLine.CustomedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="亲爱的的同学们:"
+                    android:textColor="#99FF9B6F"
+                    />
+                <com.mredrock.cyxbs.freshman.Tools.TextWithUderLine.CustomedText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="测试内容"
+                    android:textSize="14sp"
+                    android:textColor="#E68F6363"
+                    />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

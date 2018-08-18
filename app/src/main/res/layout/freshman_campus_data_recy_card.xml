@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView
+        android:id="@+id/campuss_data_recy_card_cardview"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        android:clipChildren="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="346dp"
+            android:layout_height="53dp">
+            <TextView
+                android:id="@+id/campuss_data_recy_card_title_textview"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生物信息学院"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                />
+
+            <ImageView
+                android:id="@+id/campuss_data_recy_card_title_textvi"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:background="@mipmap/frenshman_campus_data_get_detail"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+
+    </com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView>
+
+</RelativeLayout>
