@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkText">#999999</color>
+    <color name="normalText">#333333</color>
+    <color name="freshman_black">#000000</color>
+    <color name="freshman_gray_text">#666666</color>
+    <color name="freshman_black_text">#555555</color>
+    <color name="freshman_card_startcolor">#ededed</color>
+    <color name="freshman_card_endcolor">#fafafa</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#f5f3f3</color>
+    <color name="colorRed">#d50f09</color>
+
+    <color name="defStartColor">#C59AFF</color>
+    <color name="defEndColor">#C2AFFF</color>
+    <color name="dataTextColor">#CCFF5A5A</color>
+
+    <color name="tianyiSeColor">#66ccff</color>
+
+    <color name="wantToSayTextColor">#E68F6363</color>
+    <color name="wantToSayUnderLineColor">#E6FFE0AB</color>
+    <color name="wantToSayFirstTextColor">#99FF9B6F</color>
+	
+	
+	
+	    <color name="freshman_text_black">#333333</color>
+    <color name="freshman_app_white">#FFFFFF</color>
+    <color name="freshman_app_grey">#F4F4F4</color>
+    <color name="freshman_text_grey">#666666</color>
+    <color name="freshman_app_blue">#54ACFF</color>
+
+
+
+</resources>

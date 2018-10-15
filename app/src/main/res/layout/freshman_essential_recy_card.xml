@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView="http://schemas.android.com/tools">
+
+    <com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView
+        android:clipChildren="false"
+        android:id="@+id/freshman_essential_recy_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:cardUseCompatPadding="false"
+
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/freshman_campus_bbe_recy_card_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:visibility="invisible"
+                android:id="@+id/freshman_essential_recy_card_delete_checkbox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/freshman_essential_recy_card_sure_checkbox"
+                android:button="@null" />
+            <CheckBox
+                android:id="@+id/freshman_essential_recy_card_checkbox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/freshman_essential_recy_card_checkbox"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/freshman_essential_recy_card_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/freshman_essential_recy_card_checkbox"
+                android:text="录取通知书"
+                android:textColor="#333333"
+                android:layout_marginBottom="18dp"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/freshman_essential_recy_card_more_checkbox"
+                android:layout_width="14dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="16dp"
+                android:button="@null"
+                android:background="@drawable/freshman_essential_card_checkbox_right" />
+
+
+            <TextView
+                android:id="@+id/freshman_essential_recy_card_sontitle1_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_essential_recy_card_title_textview"
+                android:layout_marginLeft="49dp"
+                android:text="1.如何办理?"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/freshman_essential_recy_card_detail1_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="10dp"
+                android:text="如何办理如何办理"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_below="@id/freshman_essential_recy_card_sontitle1_textview"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/freshman_essential_recy_card_sontitle2_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_essential_recy_card_detail1_textview"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="14dp"
+                android:text="2.如何办理?"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/freshman_essential_recy_card_detail2_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="10dp"
+                android:text="如何办理如何办理"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_below="@id/freshman_essential_recy_card_sontitle2_textview"
+                android:visibility="gone"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView>
+
+
+
+
+
+
+</RelativeLayout>

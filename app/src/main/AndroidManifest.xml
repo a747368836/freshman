@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mredrock.cyxbs.freshman">
+
+    <uses-sdk tools:overrideLibrary="com.loopeer.shadow" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FreshmanMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EssentialToRegister.EssentialMainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".CampusStrategy.BBE.BBEActivity" />
+        <activity android:name=".CampusStrategy.DataReveal.DataRevealActivity" />
+        <activity android:name=".CampusStrategy.CampusMainActivity" />
+        <activity android:name=".CampusStrategy.DataReveal.DataDetailActivity" />
+        <activity android:name=".CampusStrategy.Domitory.DomitoryActivity" />
+        <activity android:name=".TalkOnline.TalkOnlineActivity" />
+        <activity android:name=".IWantToSay.IWantToSatActivity" />
+        <activity android:name=".HowToRegist.RegistActivity"></activity>
+        <activity android:name=".ArmyTraining.ArmyTraining_Activity"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity android:name=".ArmyTraining.ArmyTraining_Activity_Video" />
+
+        <activity android:name=".Tools.Album.Album_Activity"/>
+        <activity android:name=".CQUPTAppearance.CQUPTAppearance_Activity" />
+
+
+
+    </application>
+
+</manifest>

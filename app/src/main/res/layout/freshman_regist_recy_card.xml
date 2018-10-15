@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView
+    android:id="@+id/freshman_regist_recy_card_BigCard"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="345dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/freshman_regist_recy_card_Linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:clipChildren="false"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="false"
+            >
+            <com.bm.library.PhotoView
+                android:id="@+id/freshman_regist_recy_card_imageview1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="5dp"
+            >
+            <com.bm.library.PhotoView
+                android:id="@+id/freshman_regist_recy_card_imageview2"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/freshman_regist_recy_card_title"
+        android:layout_below="@id/freshman_regist_recy_card_Linerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="盖章注册"
+        android:textColor="#CC010100"
+        android:textSize="16sp"
+        />
+
+        <TextView
+            android:id="@+id/freshman_regist_recy_card_content"
+            android:layout_below="@id/freshman_regist_recy_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#B3000000"
+            android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+            />
+
+        <ImageView
+            android:id="@+id/freshman_regist_recy_card_down_imageview"
+            android:layout_below="@id/freshman_regist_recy_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="116dp"
+            android:src="@mipmap/freshman_regist_down"
+            android:scaleType="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+        <ImageView
+            android:id="@+id/freshman_regist_recy_card_up_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/freshman_regist_recy_card_content"
+            android:visibility="invisible"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/freshman_regist_uo"
+            />
+
+    </RelativeLayout>
+
+
+</com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView>
+
+    <View
+        android:id="@+id/freshman_regist_recy_card_view"
+        android:layout_marginTop="350dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+</RelativeLayout>

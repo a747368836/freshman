@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/freshman_appearance_stu_content_imageview"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="346dp"
+        android:layout_height="160dp"
+        android:scaleType="center"
+        />
+    <TextView
+        android:layout_below="@+id/freshman_appearance_stu_content_imageview"
+        android:id="@+id/freshman_appearance_stu_content_content_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="#a1000000"
+        android:text="这里是标题"
+
+        />
+
+
+
+</RelativeLayout>

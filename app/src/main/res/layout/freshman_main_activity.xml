@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_mainmenu"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/freshman_top_gradient"
+            android:fitsSystemWindows="true"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/AppTheme">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="迎新"
+                android:textColor="@color/freshman_app_white"
+                android:textSize="18sp" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/background_mainmenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/freshman_mainmenu_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_mainmenu" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_essentialtoregister"
+            android:layout_width="81dp"
+            android:layout_height="33dp"
+            android:src="@drawable/freshman_mainmenu_word_essentialtoregister"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_armytraining"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:src="@drawable/freshman_mainmenu_word_armytraining"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_campusstrategy"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:src="@drawable/freshman_mainmenu_word_campusstrategy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_onlinecommunication"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:src="@drawable/freshman_mainmenu_word_onlinecommunication"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_cquptappearance"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:src="@drawable/freshman_mainmenu_word_cquptappearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.63" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_reportingprocess"
+            android:layout_width="84dp"
+            android:layout_height="33dp"
+            android:src="@drawable/freshman_mainmenu_word_reportingprocess"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <ImageView
+            android:id="@+id/pic_mainmenu_somethingtosay"
+            android:layout_width="105dp"
+            android:layout_height="34dp"
+            android:src="@drawable/freshman_mainmenu_word_somethingtosay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_essentialtoregister"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_campusstrategy"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.42000002" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_onlinecommunication"
+            android:layout_width="49dp"
+            android:layout_height="41dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_reportinigprocess"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.73" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_somethingtosay"
+            android:layout_width="68dp"
+            android:layout_height="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_step1"
+            android:layout_width="54dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.61" />
+
+        <ImageView
+            android:id="@+id/car_mainmenu_step2"
+            android:layout_width="64dp"
+            android:layout_height="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

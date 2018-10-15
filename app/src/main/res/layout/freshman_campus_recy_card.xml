@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView
+        android:id="@+id/freshman_campus_recycler_card_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/freshman_campus_recy_card_imageScroll_banner_card"
+                android:layout_width="315dp"
+                android:layout_height="163dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/freshman_campus_recy_card_imageScroll_banner"
+                app:image_scale_type="fit_xy"
+                android:layout_width="316dp"
+                android:layout_height="164dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/freshman_campus_recy_card_food_tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_marginLeft="231dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/freshman_campus_recy_card_food_tag"
+                    />
+                <TextView
+                    android:id="@+id/freshman_campus_recy_card_food_rank_textview"
+                    android:layout_marginLeft="238dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/freshman_campus_recy_card_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/freshman_campus_recy_card_imageScroll_banner_card"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="346路"
+                android:textColor="#BD000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/freshman_campus_recy_card_price_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/freshman_campus_recy_card_imageScroll_banner_card"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="¥54(人)"
+                android:textColor="#FF7979"
+                android:textSize="12sp"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/freshman_campus_recy_card_content_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freshman_campus_recy_card_title_textview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="11dp"
+                android:text="346路"
+                android:textColor="#4D000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </com.mredrock.cyxbs.freshman.Tools.FixedCardview.CardView>
+
+
+</RelativeLayout>
